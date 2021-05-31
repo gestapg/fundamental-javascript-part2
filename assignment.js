@@ -40,3 +40,9 @@ const peruPerc = percentageOfWorld3(55);
 const japanPerc = percentageOfWorld3(12);
 
 console.log(italyPerc, peruPerc, japanPerc);
+
+const describePopulation = function (country, population) {
+  return `${country} has ${population} million people, which is about ${percentageOfWorld1(population)}% of the world`;
+};
+
+console.log(describePopulation("Indonesia", 270));
