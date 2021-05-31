@@ -11,7 +11,7 @@ if (hasDriversLicense) console.log("I can drive!");
 // const private = 165;
 // const if = 238728
 
-*/
+
 
 function logger() {
   console.log("My name is Gesta");
@@ -35,3 +35,19 @@ const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
 
 const num = Number("23");
+
+*/
+
+// declaration function
+function calcAge1(birthYear) {
+  return 2037 - birthYear;
+}
+const age1 = calcAge1(1995);
+
+// Function Expression
+const calcAge2 = function (birthYear) {
+  return 2038 - birthYear;
+};
+const age2 = calcAge2(1995);
+
+console.log(age1, age2);
