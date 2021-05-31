@@ -32,3 +32,11 @@ const indiaPercentage = percentageOfWorld2(1201);
 const afrikaPercentage = percentageOfWorld2(5);
 
 console.log(portugalPercentage, indiaPercentage, afrikaPercentage);
+
+const percentageOfWorld3 = (population) => (population / worldPopulation) * 100;
+
+const italyPerc = percentageOfWorld3(29);
+const peruPerc = percentageOfWorld3(55);
+const japanPerc = percentageOfWorld3(12);
+
+console.log(italyPerc, peruPerc, japanPerc);
