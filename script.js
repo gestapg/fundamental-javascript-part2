@@ -207,7 +207,7 @@ if (friends.includes("Steven")) {
   console.log("You have a friend called Steven");
 }
 
-*/
+
 
 ////// CODING CHALLENGE PART 2 //////
 
@@ -226,3 +226,17 @@ const tips = [calCTip(bills[0]), calCTip(bills[1]), calCTip(bills[bills.length -
 const total = [tips[0] + bills[0], tips[1] + bills[1], tips[2] + bills[2]];
 
 console.log(bills, tips, total);
+
+*/
+
+////// INTRODUCTION TO OBJECT //////
+
+const gestaArray = ["Gesta", "Gemilang", 2037 - 1995, "developer", ["Michael", "Peter", "Steven"]];
+
+const gesta = {
+  firstName: "Gesta",
+  lastName: "Gemilang",
+  age: 2037 - 1995,
+  job: "developer",
+  friends: ["Michael", "Peter", "Steven"],
+};
