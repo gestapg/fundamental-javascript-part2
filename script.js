@@ -134,7 +134,7 @@ const winner2 = checkWinner(scoreDolphins1, scoreKoalas1);
 console.log(winner1);
 console.log(winner2);
 
-*/
+
 // ARRAYS
 
 const friends = ["Michael", "Steven", "Peter"];
@@ -172,3 +172,37 @@ console.log(age1, age2, age3);
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 
 console.log(ages);
+
+*/
+////// BASIC ARRAY OPERATIONS ///////
+
+const friends = ["Michael", "Steven", "Peter"];
+
+// ADD ELEMENTS
+const newLength = friends.push("Jay");
+console.log(friends);
+console.log(newLength);
+
+friends.unshift("John");
+console.log(friends);
+
+// Remove Elements
+friends.pop();
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+
+friends.shift();
+console.log(friends);
+
+console.log(friends.indexOf("Steven")); // menunjukan index keberapa
+console.log(friends.indexOf("Bob"));
+
+friends.push(23);
+console.log(friends.includes("Steven")); // menunjukan hasil true atau false
+console.log(friends.includes("Bob"));
+console.log(friends.includes(23));
+
+if (friends.includes("Steven")) {
+  console.log("You have a friend called Steven");
+}
