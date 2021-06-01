@@ -227,7 +227,6 @@ const total = [tips[0] + bills[0], tips[1] + bills[1], tips[2] + bills[2]];
 
 console.log(bills, tips, total);
 
-*/
 
 ////// INTRODUCTION TO OBJECT //////
 
@@ -240,3 +239,40 @@ const gesta = {
   job: "developer",
   friends: ["Michael", "Peter", "Steven"],
 };
+ 
+*/
+
+/////// DOT. vs Bracket notation ///////////
+
+const gesta = {
+  firstName: "Gesta",
+  lastName: "Gemilang",
+  age: 2037 - 1995,
+  job: "developer",
+  friends: ["Michael", "Peter", "Steven"],
+};
+console.log(gesta);
+
+console.log(gesta.lastName);
+console.log(gesta["lastName"]);
+
+const nameKey = "Name";
+console.log(gesta["first" + nameKey]);
+console.log(gesta["last" + nameKey]);
+
+const interestedIn = prompt("What do you want to know about Gesta? Choose between firstName, lastName, age, job, and friends");
+
+if (gesta[interestedIn]) {
+  console.log(gesta[interestedIn]);
+} else {
+  console.log("Wrong request! Choose between firstName, lastName, age, job, and friends");
+}
+
+gesta.location = "Indonesia";
+gesta["twitter"] = "@gesta";
+console.log(gesta);
+
+// Challenge
+//'Gesta has 3 friends, and his bestfriend is called Michael'
+
+console.log(`${gesta.firstName} has ${gesta.friends.length} friends, and his bestfriend is called ${gesta.friends[0]}`);
