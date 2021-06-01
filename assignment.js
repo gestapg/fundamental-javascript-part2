@@ -74,8 +74,21 @@ const myCountry = {
   language: "Bahasa",
   population: 270,
   neighbour: ["Malaysia", "Brunei", "Singapore"],
+
+  describe: function () {
+    return `${this.country} has ${this.population} million ${this["language"]}-speaking people, ${this.neighbour.length} neighbouring countries and a capital called ${this.capital}.`;
+  },
+
+  checkIsland: function () {
+    this.isIsland = this.isIsland ? this.neighbour.length !== 0 : this.neighbour.length === 0;
+    return this.isIsland;
+  },
 };
 
+console.log(myCountry.describe());
+console.log(myCountry.checkIsland());
+console.log(myCountry);
+/*
 console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry["language"]}-speaking people, ${myCountry.neighbour.length} neighbouring countries and a capital called ${myCountry.capital}.`);
 
 myCountry.population = 270 + 2;
@@ -86,3 +99,4 @@ console.log(`${myCountry.country} has ${myCountry.population} million ${myCountr
 myCountry["population"] = myCountry.population - 4;
 
 console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry["language"]}-speaking people, ${myCountry.neighbour.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+*/
