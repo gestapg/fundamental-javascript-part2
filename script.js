@@ -240,7 +240,7 @@ const gesta = {
   friends: ["Michael", "Peter", "Steven"],
 };
  
-*/
+
 
 /////// DOT. vs Bracket notation ///////////
 
@@ -276,3 +276,41 @@ console.log(gesta);
 //'Gesta has 3 friends, and his bestfriend is called Michael'
 
 console.log(`${gesta.firstName} has ${gesta.friends.length} friends, and his bestfriend is called ${gesta.friends[0]}`);
+
+*/
+
+///// OBJECT METHODS //////
+
+const gesta = {
+  firstName: "Gesta",
+  lastName: "Gemilang",
+  birthYear: 1995,
+  job: "developer",
+  friends: ["Michael", "Peter", "Steven"],
+  hasDriversLicense: false,
+
+  // calcAge: function (birthYear) {
+  //   return 2037 - birthYear;
+  // },
+  // calcAge: function () {
+  //   console.log(this);
+  //   return 2037 - this.birthYear;
+  // },
+
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+
+  getSummary: function () {
+    return `${this.firstName} is a ${this.calcAge()}-years old ${this.job}, and ${this.hasDriversLicense ? "he has a driver's License" : "he does not have a driver's License"}`;
+  },
+};
+
+console.log(gesta.calcAge());
+
+console.log(gesta.age);
+console.log(gesta.age);
+console.log(gesta.age);
+
+console.log(gesta.getSummary());
