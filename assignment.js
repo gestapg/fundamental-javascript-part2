@@ -71,7 +71,18 @@ console.log(neighbours);
 const myCountry = {
   country: "Indonesia",
   capital: "Jakarta",
-  language: "Bahasa Indonesia",
+  language: "Bahasa",
   population: 270,
   neighbour: ["Malaysia", "Brunei", "Singapore"],
 };
+
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry["language"]}-speaking people, ${myCountry.neighbour.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+
+myCountry.population = 270 + 2;
+
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry["language"]}-speaking people, ${myCountry.neighbour.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+
+// const minus = 2;
+myCountry["population"] = myCountry.population - 4;
+
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry["language"]}-speaking people, ${myCountry.neighbour.length} neighbouring countries and a capital called ${myCountry.capital}.`);
