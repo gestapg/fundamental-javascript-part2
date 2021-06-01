@@ -277,7 +277,7 @@ console.log(gesta);
 
 console.log(`${gesta.firstName} has ${gesta.friends.length} friends, and his bestfriend is called ${gesta.friends[0]}`);
 
-*/
+
 
 ///// OBJECT METHODS //////
 
@@ -314,3 +314,33 @@ console.log(gesta.age);
 console.log(gesta.age);
 
 console.log(gesta.getSummary());
+
+*/
+
+/////// CODING CHALLENGE ////////
+
+const mark = {
+  fullName: "Mark Miller",
+  mass: 78,
+  height: 1.69,
+
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  },
+};
+
+const john = {
+  fullName: "John Smith",
+  mass: 92,
+  height: 1.95,
+
+  calcBMI: function () {
+    this.bmi = this.mass / (this.height * this.height);
+    return this.bmi;
+  },
+};
+
+console.log(mark.calcBMI(), john.calcBMI());
+
+mark.bmi > john.bmi ? console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})`) : console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})`);
