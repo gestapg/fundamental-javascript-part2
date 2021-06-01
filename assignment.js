@@ -46,3 +46,10 @@ const describePopulation = function (country, population) {
 };
 
 console.log(describePopulation("Indonesia", 270));
+
+const populations = [1441, 270, 352, 1201];
+console.log(populations.length === 4);
+
+const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld2(populations[1]), percentageOfWorld3(populations[2]), percentageOfWorld1(populations[populations.length - 1])];
+
+console.log(percentages);
