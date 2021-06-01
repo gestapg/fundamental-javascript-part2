@@ -1,5 +1,5 @@
 "use strict";
-
+// use strict
 /*
 let hasDriversLicense = false;
 const passTest = true;
@@ -11,7 +11,7 @@ if (hasDriversLicense) console.log("I can drive!");
 // const private = 165;
 // const if = 238728
 
-
+// FUNCTION
 
 function logger() {
   console.log("My name is Gesta");
@@ -36,7 +36,7 @@ console.log(appleOrangeJuice);
 
 const num = Number("23");
 
-
+// DECLARATION VS EXPRESSION FUNCTION
 
 // declaration function
 function calcAge1(birthYear) {
@@ -52,7 +52,7 @@ const age2 = calcAge2(1995);
 
 console.log(age1, age2);
 
-
+// ARROW FUNCTION
 
 // Arrow Function
 const calcAge3 = (birthYear) => 2037 - birthYear;
@@ -69,7 +69,7 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 console.log(yearsUntilRetirement(1995, "Gesta"));
 console.log(yearsUntilRetirement(1996, "Sarah"));
 
-
+// FUNCTIONS CALLING FUNCTIONS
 
 function cutFruitPieces(fruit) {
   return fruit * 4;
@@ -106,7 +106,7 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 console.log(yearsUntilRetirement(1995, "Gesta"));
 console.log(yearsUntilRetirement(1950, "Aki Mahir"));
 
-*/
+// CODING CHALENGE PART1
 
 const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
 
@@ -133,3 +133,42 @@ const winner2 = checkWinner(scoreDolphins1, scoreKoalas1);
 
 console.log(winner1);
 console.log(winner2);
+
+*/
+// ARRAYS
+
+const friends = ["Michael", "Steven", "Peter"];
+console.log(friends);
+
+const y = new Array(1995, 1984, 2008, 2020);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = "Jay";
+console.log(friends);
+// friends = ['bobo', 'nona']
+
+const firstName = "Jonas";
+const jonas = [firstName, "Schmedtmann", 2037 - 1991, "teacher", friends];
+console.log(jonas);
+console.log(jonas.length);
+
+// Excercise
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+};
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+
+console.log(age1, age2, age3);
+
+const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
+
+console.log(ages);
