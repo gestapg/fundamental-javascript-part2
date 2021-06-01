@@ -315,7 +315,7 @@ console.log(gesta.age);
 
 console.log(gesta.getSummary());
 
-*/
+
 
 /////// CODING CHALLENGE ////////
 
@@ -344,3 +344,24 @@ const john = {
 console.log(mark.calcBMI(), john.calcBMI());
 
 mark.bmi > john.bmi ? console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})`) : console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})`);
+
+
+*/
+
+/////// ITERATION : THE FOR LOOP ////////
+
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 1');
+// console.log('Lifting weights repetition 1');
+
+// for loop keeps running while condition is TRUE
+for (let rep = 1; rep <= 10; rep++) {
+  console.log(`Lifting weights repetition ${rep}`);
+}
