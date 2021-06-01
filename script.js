@@ -346,7 +346,7 @@ console.log(mark.calcBMI(), john.calcBMI());
 mark.bmi > john.bmi ? console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s (${john.bmi})`) : console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s (${mark.bmi})`);
 
 
-*/
+
 
 /////// ITERATION : THE FOR LOOP ////////
 
@@ -364,4 +364,45 @@ mark.bmi > john.bmi ? console.log(`${mark.fullName}'s BMI (${mark.bmi}) is highe
 // for loop keeps running while condition is TRUE
 for (let rep = 1; rep <= 10; rep++) {
   console.log(`Lifting weights repetition ${rep}`);
+}
+
+*/
+//////// LOOPING ARRAYS, BREAKING & CONTINUING ///////
+
+const gestaArray = ["Gesta", "Gemilang", 2037 - 1995, "developer", ["Michael", "Peter", "Steven"], true];
+
+const types = [];
+
+for (let i = 0; i < gestaArray.length; i++) {
+  // reading from gesta array
+  console.log(gestaArray[i], typeof gestaArray[i]);
+
+  // filling types array
+  // types[i] = typeof gestaArray[i];
+  types.push(typeof gestaArray[i]);
+}
+
+console.log(types);
+
+const years = [1995, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+// continue and break
+console.log("---ONLY STRING---");
+for (let i = 0; i < gestaArray.length; i++) {
+  if (typeof gestaArray[i] !== "string") continue;
+
+  console.log(gestaArray[i], typeof gestaArray[i]);
+}
+
+console.log("---BREAK WITH NUMBER---");
+for (let i = 0; i < gestaArray.length; i++) {
+  if (typeof gestaArray[i] === "number") break;
+
+  console.log(gestaArray[i], typeof gestaArray[i]);
 }
