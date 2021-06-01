@@ -53,3 +53,17 @@ console.log(populations.length === 4);
 const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld2(populations[1]), percentageOfWorld3(populations[2]), percentageOfWorld1(populations[populations.length - 1])];
 
 console.log(percentages);
+
+const neighbours = ["Malaysia", "Brunei", "Singapore"];
+console.log(neighbours);
+neighbours.push("Utopia");
+console.log(neighbours);
+neighbours.pop();
+console.log(neighbours);
+
+if (!neighbours.includes("Germany")) {
+  console.log("Probably not a central European Country");
+}
+
+neighbours[1] = "Timor Leste";
+console.log(neighbours);
