@@ -67,3 +67,11 @@ if (!neighbours.includes("Germany")) {
 
 neighbours[1] = "Timor Leste";
 console.log(neighbours);
+
+const myCountry = {
+  country: "Indonesia",
+  capital: "Jakarta",
+  language: "Bahasa Indonesia",
+  population: 270,
+  neighbour: ["Malaysia", "Brunei", "Singapore"],
+};
