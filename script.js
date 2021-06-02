@@ -366,7 +366,7 @@ for (let rep = 1; rep <= 10; rep++) {
   console.log(`Lifting weights repetition ${rep}`);
 }
 
-*/
+
 //////// LOOPING ARRAYS, BREAKING & CONTINUING ///////
 
 const gestaArray = ["Gesta", "Gemilang", 2037 - 1995, "developer", ["Michael", "Peter", "Steven"], true];
@@ -405,4 +405,25 @@ for (let i = 0; i < gestaArray.length; i++) {
   if (typeof gestaArray[i] === "number") break;
 
   console.log(gestaArray[i], typeof gestaArray[i]);
+}
+*/
+
+/////// LOOPING BACKWARDS AND LOOP IN LOOPS /////
+
+const gestaArray = ["Gesta", "Gemilang", 2037 - 1995, "developer", ["Michael", "Peter", "Steven"], true];
+
+// 0,1,...,4
+//
+
+for (let i = gestaArray.length - 1; i >= 0; i--) {
+  const element = gestaArray[i];
+  console.log(i, element);
+}
+
+for (let exercise = 1; exercise < 4; exercise++) {
+  console.log(`------- starting excercise ${exercise}`);
+
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Excercise ${exercise}: lifting weight repetition ${rep}`);
+  }
 }
