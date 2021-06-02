@@ -428,7 +428,7 @@ for (let exercise = 1; exercise < 4; exercise++) {
   }
 }
 
-*/
+
 
 // for (let rep = 1; rep <= 10; rep++) {
 //   console.log(`Lifting weights repetition ${rep}`);
@@ -450,3 +450,38 @@ while (dice !== 6) {
     console.log(`loop is end...`);
   }
 }
+
+*/
+
+/////////// code challenge //////////////
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const total = [];
+
+const calCTip = function (bills) {
+  if (bills >= 50 && bills <= 300) {
+    return 0.15 * bills;
+  } else {
+    return 0.2 * bills;
+  }
+};
+
+for (let i = 0; i < bills.length; i++) {
+  tips.push(calCTip(bills[i]));
+  total.push(tips[i] + bills[i]);
+}
+
+console.log(tips);
+console.log(total);
+
+const calcAverage = function (arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum / arr.length;
+};
+
+console.log(calcAverage(total));
+console.log(calcAverage(tips));
