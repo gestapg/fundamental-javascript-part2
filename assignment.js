@@ -1,5 +1,5 @@
 "use strict";
-
+/*
 function describeCountry(country, population, capitalCity) {
   const described = `${country} has ${population} million people and its capital city is ${capitalCity}`;
   return described;
@@ -99,4 +99,25 @@ console.log(`${myCountry.country} has ${myCountry.population} million ${myCountr
 myCountry["population"] = myCountry.population - 4;
 
 console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry["language"]}-speaking people, ${myCountry.neighbour.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+
+
+for (let voters = 1; voters < 51; voters++) {
+  console.log(`Voter number ${voters} is currently voting`);
+}
 */
+const worldPopulation = 7900;
+const populations = [1441, 270, 352, 1201];
+const percentages2 = [];
+
+function percentageOfWorld1(population) {
+  return (population / worldPopulation) * 100;
+}
+
+for (let i = 0; i < populations.length; i++) {
+  percentages2.push(percentageOfWorld1(populations[i]));
+}
+
+console.log(percentages2);
+
+const listOfNeighbours = [["Canada", "Mexico"], ["Spain"], ["Norway", "Sweden", "Russia"]];
+for (let i = 0; i < listOfNeighbours.length; i++) for (let y = 0; y < listOfNeighbours[i].length; y++) console.log(`Neighbour: ${listOfNeighbours[i][y]}`);
